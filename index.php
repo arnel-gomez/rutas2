@@ -53,7 +53,9 @@ $db = new DatabaseController();
 
             marker1.setLngLat([latitud,longitud]);
 
-            map.flyTo([latitud,longitud]);
+            map.flyTo({
+                center: [latitud,longitud]
+            });
         })
 </script> 
 </body>
